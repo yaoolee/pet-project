@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  html, body {
+    width: 100%;
+    height: 100%;
+  }
+  
+  /* 2. Font + background */
+  body {
+    background: #FFCC00;
+    font-family: 'Press Start 2P', cursive;
+    color: #222;
+  }
+  
+  /* 3. Center everything vertically & horizontally */
+  main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  /* 4. Heading style */
+  .header {
+    font-size: 48px;        
+    letter-spacing: 2px;  
+    text-align: center;
+    margin-bottom: 2rem;
+    
+  }
+  
+  /* 5. Start button */
+  #start {
+    background: #E60012;
+    color: #FFFFFF;
+    border: none;
+    border-radius: 20px;
+    width: 170px;
+    height: 60px;
+    cursor: pointer;
+    font-family: 'Press Start 2P', cursive;
+    font-size: 1rem;        /* adjust as needed */
+    transition: transform 0.1s;
+  }
+  #start:hover {
+    transform: scale(1.05);
+  }
+  #start:active {
+    transform: scale(0.95);
+  }
+  

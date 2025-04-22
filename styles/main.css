@@ -1,85 +1,88 @@
-/* Global */
+/* Global & body */
 body {
-    margin: 0;
-    padding: 0;
-    font-family: 'Montserrat', sans-serif;
-    background: #FF8E76;
-    color: #fff;
-  }
-  
-  /* Grid container */
-  .container {
-    max-width: 1200px;
-    margin: 2rem auto;
-    padding: 0 1rem;
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
-    gap: 2rem;
-  }
-  
-  /* Card */
-  .card {
-    position: relative;
-    background: #FF5733;
-    border-radius: 12px;
-    padding: 1.5rem;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-  }
-  
-  /* Back arrow */
-  .card .back {
-    position: absolute;
-    top: 1rem;
-    left: 1rem;
-    font-size: 1.5rem;
-    cursor: pointer;
-  }
-  
-  /* Image wrapper */
-  .img-wrap {
-    text-align: center;
-    margin: 1rem 0;
-  }
-  
-  .img-wrap img {
-    max-width: 100%;
-    height: auto;
-    border-radius: 8px;
-  }
-  
-  /* Info paragraphs */
-  .info p {
-    margin: 0.25rem 0;
-    font-weight: 600;
-    font-size: 1rem;
-  }
-  
-  /* Weakness buttons */
-  .weaknesses {
-    margin-top: 1rem;
-    display: flex;
-    align-items: center;
-    gap: 0.5rem;
-  }
-  
-  .weaknesses span {
-    font-weight: 600;
-  }
-  
-  .weaknesses button {
-    border: none;
-    border-radius: 20px;
-    padding: 0.4rem 1rem;
-    font-weight: 600;
-    cursor: pointer;
-    color: #fff;
-  }
-  
-  .weaknesses .water {
-    background: #0073E6;
-  }
-  
-  .weaknesses .electric {
-    background: #FFCC00;
-  }
-  
+  margin: 0;
+  padding: 0;
+  font-family: 'Montserrat', sans-serif;
+}
+
+/* Page background per type */
+body.fire  { background: #FF8E76; }  
+body.water { background: #B6DAFF; }  /* Water page bg */
+body.grass { background: #BAFABC; }
+body.electric { background: #FFEA96; }
+/* Detail card container */
+.detail-card {
+  position: relative;
+  max-width: 400px;
+  margin: 3rem auto;
+  border-radius: 12px;
+  padding: 1.5rem;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+  color: #fff;
+}
+
+/* Inner‑card background per type */
+.detail-card.fire  { background: #FF5733; }  /* Fire */
+.detail-card.water { background: #0073E6; }  /* Water inner card */      
+.detail-card.grass { background: #4CAF50; }
+.detail-card.electric { background: #FFCC00; }
+/* Back arrow */
+.back-arrow {
+  position: absolute;
+  top: 1rem;
+  left: 1rem;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+/* Pokémon image */
+.img-wrap {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+.img-wrap img {
+  max-width: 300px;
+  max-height: 300px;
+  border-radius: 16px;
+  object-fit: contain;
+}
+
+/* Stats block */
+.stats {
+  text-align: center;
+  line-height: 1.4;
+  margin-bottom: 1rem;
+  font-weight: 600;
+}
+.stats h2 {
+  margin-bottom: 0.5rem;
+}
+
+/* Weaknesses label + badges */
+.weaknesses {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  margin-top: 1rem;
+}
+.weakness-label {
+  font-weight: 600;
+  margin-top: 4px;
+}
+
+/* Badge defaults */
+.badge {
+  display: inline-block;
+  padding: 0.4rem 0.8rem;
+  border-radius: 999px;
+  font-weight: 600;
+  color: #fff;
+}
+
+/* Badge colors by weakness type */
+.badge.Grass    { background: #4CAF50; }                    /* Grass weakness */
+.badge.Electric { background: #FFCC00; color: #fff; }    /* Electric weakness */
+.badge.Water    { background: #0073E6; }                   /* blue */
+.badge.Fire { background: #FF5733; color: #fff; }
+.badge.Ice { background: #B6DAFF; color: #000; }
