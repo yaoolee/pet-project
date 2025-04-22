@@ -1,0 +1,85 @@
+/* Global */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+    background: #FF8E76;
+    color: #fff;
+  }
+  
+  /* Grid container */
+  .container {
+    max-width: 1200px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 2rem;
+  }
+  
+  /* Card */
+  .card {
+    position: relative;
+    background: #FF5733;
+    border-radius: 12px;
+    padding: 1.5rem;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  }
+  
+  /* Back arrow */
+  .card .back {
+    position: absolute;
+    top: 1rem;
+    left: 1rem;
+    font-size: 1.5rem;
+    cursor: pointer;
+  }
+  
+  /* Image wrapper */
+  .img-wrap {
+    text-align: center;
+    margin: 1rem 0;
+  }
+  
+  .img-wrap img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+  }
+  
+  /* Info paragraphs */
+  .info p {
+    margin: 0.25rem 0;
+    font-weight: 600;
+    font-size: 1rem;
+  }
+  
+  /* Weakness buttons */
+  .weaknesses {
+    margin-top: 1rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+  }
+  
+  .weaknesses span {
+    font-weight: 600;
+  }
+  
+  .weaknesses button {
+    border: none;
+    border-radius: 20px;
+    padding: 0.4rem 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    color: #fff;
+  }
+  
+  .weaknesses .water {
+    background: #0073E6;
+  }
+  
+  .weaknesses .electric {
+    background: #FFCC00;
+  }
+  

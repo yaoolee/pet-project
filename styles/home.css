@@ -1,0 +1,152 @@
+/* Google Fonts fallback */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+    background: #E3E3E3;
+    color: #222;
+  }
+  
+  /* Color variables */
+  :root {
+    --yellow: #FFCC00;
+    --yellow-light: #FFEA96;
+    --green: #4CAF50;
+    --green-light: #BAFABC;
+    --blue: #0073E6;
+    --blue-light: #B6DAFF;
+    --red: #FF5733;
+    --red-light: #FF8E76;
+    --purple: #7F21AB;
+  }
+  
+  /* Container */
+  .container {
+    max-width: 1200px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+  }
+  
+  /* Search bar */
+  .search-bar {
+    display: flex;
+    gap: 0.5rem;
+    margin-bottom: 1.5rem;
+    margin-left: 300px;
+  }
+  
+  .search-bar input {
+    flex: 1;
+    padding: 0.75rem 1rem;
+    border: none;
+    border-radius: 4px;
+    font-size: 1rem;
+    max-width:400px;
+  }
+  
+  .search-bar button {
+    background: var(--purple);
+    color: #fff;
+    border: none;
+    padding: 0 1.25rem;
+    font-size: 1rem;
+    border-radius: 20px;
+    cursor: pointer;
+  }
+  
+  /* Type filters */
+  .type-filters {
+    background: #fff;
+    padding: 1rem; /* increased padding */
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center; /* center horizontally */
+    gap: 1rem;
+    /*margin: 2rem auto; /* auto margins to center */
+    width: fit-content; /* shrink to fit children */
+    /*min-height: 100px; /* increased height */
+    margin-left: 300px;
+    margin-bottom: 70px;
+    margin-top: 40px;
+  }
+  
+  .type-filters span {
+    font-weight: 600;
+  }
+  
+  .type-filters button {
+    border: none;
+    padding: 0.5rem 1rem; /* was 0.5rem 1rem */
+    font-weight: 600;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 1rem;
+  }
+  
+  .filter-electric { background: var(--yellow); color: #222; }
+  .filter-grass   { background: var(--green);  color: #fff; }
+  .filter-fire    { background: var(--red);    color: #fff; }
+  .filter-water   { background: var(--blue);   color: #fff; }
+  
+  /* Cards grid */
+  .cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 1.5rem;
+  }
+  
+  /* Card style */
+  .card {
+    padding: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  }
+  
+  .card h3 {
+    margin: 0;
+    font-size: 1.1rem;
+    font-weight: 600;
+  }
+  
+  .img-wrap {
+    margin: 0.75rem 0;
+    text-align: center;
+  }
+  
+  .img-wrap img {
+    max-width: 100px;
+    max-height: 100px;
+  }
+  
+  /* Dots before type */
+  .card .dot {
+    display: inline-block;
+    width: 0.75rem;
+    height: 0.75rem;
+    border-radius: 50%;
+    vertical-align: middle;
+    margin-right: 0.5rem;
+  }
+  
+  /* Type-specific backgrounds and dot colors */
+  .electric {
+    background: var(--yellow-light);
+  }
+  .electric .dot { background: var(--yellow); }
+  
+  .grass {
+    background: var(--green-light);
+  }
+  .grass .dot { background: var(--green); }
+  
+  .water {
+    background: var(--blue-light);
+  }
+  .water .dot { background: var(--blue); }
+  
+  .fire {
+    background: var(--red-light);
+  }
+  .fire .dot { background: var(--red); }
+  
