@@ -62,8 +62,8 @@ Pokémon sprite assets (used under educational fair‑use) were sourced via the 
 
 1. **Clone the repo**
    ```bash
-   git clone https://github.com/yourusername/pokedex-companion.git
-   cd pokedex-companion
+   git clone https://github.com/yaoolee/pet-project.git
+   cd pet-project
    ```
 2. **Open** `index.html` in your browser.
 3. **Click** Start to enter the Pokédex.
