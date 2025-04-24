@@ -1,4 +1,4 @@
-/* Global & body */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 body {
   margin: 0;
   padding: 0;
@@ -7,7 +7,7 @@ body {
 
 /* Page background per type */
 body.fire  { background: #FF8E76; }  
-body.water { background: #B6DAFF; }  /* Water page bg */
+body.water { background: #B6DAFF; }  
 body.grass { background: #BAFABC; }
 body.electric { background: #FFEA96; }
 /* Detail card container */
@@ -22,8 +22,8 @@ body.electric { background: #FFEA96; }
 }
 
 /* Inner‑card background per type */
-.detail-card.fire  { background: #FF5733; }  /* Fire */
-.detail-card.water { background: #0073E6; }  /* Water inner card */      
+.detail-card.fire  { background: #FF5733; }  
+.detail-card.water { background: #0073E6; }      
 .detail-card.grass { background: #4CAF50; }
 .detail-card.electric { background: #FFCC00; }
 /* Back arrow */
@@ -65,6 +65,7 @@ body.electric { background: #FFEA96; }
   justify-content: center;
   gap: 0.5rem;
   margin-top: 1rem;
+  flex-wrap: wrap;
 }
 .weakness-label {
   font-weight: 600;
@@ -81,8 +82,8 @@ body.electric { background: #FFEA96; }
 }
 
 /* Badge colors by weakness type */
-.badge.Grass    { background: #4CAF50; }                    /* Grass weakness */
-.badge.Electric { background: #FFCC00; color: #fff; }    /* Electric weakness */
-.badge.Water    { background: #0073E6; }                   /* blue */
+.badge.Grass    { background: #4CAF50; }                   
+.badge.Electric { background: #FFCC00; color: #fff; }    
+.badge.Water    { background: #0073E6; }                   
 .badge.Fire { background: #FF5733; color: #fff; }
 .badge.Ice { background: #B6DAFF; color: #000; }

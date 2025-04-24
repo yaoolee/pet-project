@@ -1,4 +1,4 @@
-const pokedex = {
+var pokedex = {
     Charizard: {
       type: 'fire',
       height: "5'07\"",
@@ -131,12 +131,12 @@ const pokedex = {
   };
   
   // 2) read ?name= from URL
-  const params = new URLSearchParams(location.search);
-  const name   = params.get('name');
-  const data   = pokedex[name] || {};
+  var params = new URLSearchParams(location.search);
+  var name   = params.get('name');
+  var data   = pokedex[name] || {};
   
   // 3) render into the card
-  const detail = document.getElementById('detailCard');
+  var detail = document.getElementById('detailCard');
   document.body.classList.add(data.type);
   detailCard.classList.add(data.type);
   detail.innerHTML += `
