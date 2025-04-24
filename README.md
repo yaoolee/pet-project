@@ -2,7 +2,6 @@
 
 A lightweight, retro‐styled web app that lets you browse Pokémon, filter by type, search by name, and view detailed stat cards—all built with vanilla HTML, CSS, and JavaScript.
 
-<img src="./images/screenshot-home.png" alt="Pokédex Companion Home Screen" width="600" />
 
 ---
 
