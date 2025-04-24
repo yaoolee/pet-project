@@ -70,9 +70,7 @@ Pokémon sprite assets (used under educational fair‑use) were sourced via the 
 
 ## Link
 
-```bash
- Github Page: https://yaoolee.github.io/pet-project/
-```
+`[Github Page:](https://yaoolee.github.io/pet-project/)`.
 
 ## Future Features
 
