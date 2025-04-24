@@ -68,6 +68,11 @@ Pokémon sprite assets (used under educational fair‑use) were sourced via the 
 2. **Open** `index.html` in your browser.
 3. **Click** Start to enter the Pokédex.
 
+## Link
+
+``` https://yaoolee.github.io/pet-project/
+```
+
 ## Future Features
 
 1. Comparison between pokemon.
