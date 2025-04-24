@@ -38,19 +38,6 @@ pokedex-companion/
 - **JavaScript** (ES6) for interactivity
 - **Google Fonts**: `Press Start 2P` & `Montserrat`
 
-## 🎨 Design & Colors
-
-| Element         | Color     |
-| --------------- | --------- |
-| Fire‑type bg    | `#FF8E76` |
-| Water‑type bg   | `#B6DAFF` |
-| Fire inner card | `#FF5733` |
-| Water inner card| `#0073E6` |
-| Grass badge     | `#4CAF50` |
-| Electric badge  | `#FFCC00` |
-| Start screen bg | `#FFCC00` |
-| Start button    | `#E60012` |
-
 ## 📷 Image Credits
 
 Pokémon sprite assets (used under educational fair‑use) were sourced via the freeCodeCamp tutorial:
