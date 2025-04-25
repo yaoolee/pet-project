@@ -9,14 +9,14 @@
     height: 100%;
   }
   
-  /* 2. Font + background */
+  /* Font + background */
   body {
     background: #FFCC00;
     font-family: 'Press Start 2P', cursive;
     color: #222;
   }
   
-  /* 3. Center everything vertically & horizontally */
+  /* Center everything vertically & horizontally */
   main {
     display: flex;
     flex-direction: column;
@@ -25,7 +25,7 @@
     height: 100vh;
   }
   
-  /* 4. Heading style */
+  /* Heading style */
   .header {
     font-size: 48px;        
     letter-spacing: 2px;  
@@ -34,7 +34,7 @@
     
   }
   
-  /* 5. Start button */
+  /* Start button */
   #start {
     background: #E60012;
     color: #FFFFFF;
