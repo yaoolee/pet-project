@@ -157,3 +157,74 @@ body {
   }
   .fire .dot { background: var(--red); }
   
+  /* ========== TABLET (≤768px) ========== */
+@media (max-width: 768px) {
+  /* container padding */
+  .container {
+    padding: 0 0.5rem;
+  }
+
+  /* stack search input & button */
+  .search-bar {
+    flex-direction: column;
+    align-items: stretch;
+    margin-left: 0;
+    gap: 0.5rem;
+  }
+  .search-bar input,
+  .search-bar button {
+    width: 100%;
+    max-width: none;
+  }
+
+  /* filters wrap to multiple lines */
+  .type-filters {
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-left: 0;
+  }
+
+  /* shrink H1/H2 */
+  h1 {
+    font-size: 1.75rem;
+    text-align: center;
+  }
+  h2 {
+    font-size: 1.25rem;
+    text-align: center;
+  }
+
+  /* grid: two columns */
+  .cards {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+  }
+}
+
+/* ========== MOBILE (≤480px) ========== */
+@media (max-width: 480px) {
+  /* make everything full-width */
+  .search-bar,
+  .type-filters {
+    width: 100%;
+    margin: 0 auto 1rem;
+  }
+
+  /* grid: one column */
+  .cards {
+    grid-template-columns: 1fr;
+  }
+
+  /* card padding & font */
+  .card {
+    padding: 0.75rem;
+  }
+  .card h3 {
+    font-size: 1rem;
+  }
+
+  /* smaller dot text */
+  .card p {
+    font-size: 0.9rem;
+  }
+}
