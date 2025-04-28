@@ -2,9 +2,11 @@
 
 A lightweight, retro‐styled web app that lets you browse Pokémon, filter by type, search by name, and view detailed stat cards—all built with vanilla HTML, CSS, and JavaScript.
 
-
 ---
 
+## Live Demo
+View the live site on GitHub Pages:
+[Pokédex Companion](https://yaoolee.github.io/pet-project/)
 ## 🚀 Features
 
 - **Start Screen**: Pixel‑style splash screen with a “Press Start” vibe.
@@ -55,9 +57,6 @@ Pokémon sprite assets (used under educational fair‑use) were sourced via the 
 2. **Open** `index.html` in your browser.
 3. **Click** Start to enter the Pokédex.
 
-## Link
-
-[Pokédex Companion](https://yaoolee.github.io/pet-project/)
 
 ## Future Features
 
