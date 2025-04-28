@@ -1,5 +1,8 @@
 document.addEventListener('DOMContentLoaded', () => {
     var filterButtons = document.querySelectorAll('.type-filters button');
+    var validNames = Array.from(document.querySelectorAll('.card h3'))
+    .map(h3 => h3.textContent.trim().toLowerCase());
+    var feedback = document.getElementById('search-feedback');
     var searchButton   = document.querySelector('.search-bar button');
     var searchInput    = document.querySelector('.search-bar input');
     var cards          = document.querySelectorAll('.card');
@@ -32,10 +35,16 @@ document.addEventListener('DOMContentLoaded', () => {
       var query = searchInput.value.trim().toLowerCase();
       if (!query) {
         // if blank, show all cards again
-        cards.forEach(card => card.style.display = 'block');
+        cards.forEach(card => card.style.display = 'none');
+        feedback.textContent = '';
         return;
       }
-  
+  // invalid name: hide all & show feedback
+  if (!validNames.includes(query)) {
+    cards.forEach(card => card.style.display = 'none');
+    feedback.textContent = `No Pokémon named “${searchInput.value}”.`;
+    return;
+  }
       cards.forEach(card => {
         var name = card.querySelector('h3').textContent.trim().toLowerCase();
         if (name === query) {
@@ -44,6 +53,7 @@ document.addEventListener('DOMContentLoaded', () => {
           card.style.display = 'none';
         }
       });
+      feedback.textContent = '';
     });
 
     hideAllCards();
