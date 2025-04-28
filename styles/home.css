@@ -228,3 +228,9 @@ body {
     font-size: 0.9rem;
   }
 }
+.feedback {
+  color: #E60012;
+  font-size: 1rem;
+  margin: 0.5rem 0;
+  min-height: 1.2em;    
+}
