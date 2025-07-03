@@ -7,6 +7,8 @@ A lightweight, retro‐styled web app that lets you browse Pokémon, filter by t
 ## Live Demo
 View the live site on GitHub Pages:
 [Pokédex Companion](https://yaoolee.github.io/pet-project/)
+![Screenshot](screenshot/preview1.png)
+![Screenshot](screenshot/preview2.png)
 ## 🚀 Features
 
 - **Start Screen**: Pixel‑style splash screen with a “Press Start” vibe.
